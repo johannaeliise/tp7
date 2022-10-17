@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Verdana';
+  background-color: #6D5D46;
+  padding: 0;
+  margin: 0;
+}
+
+#titleBanner {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-image: url(https://images.unsplash.com/photo-1585198330882-f32e816d0320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-image padding-top;
+  30;
+  background-size: cover;
+  background-position: 20% 15%;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 70%);
+}
+/* make recipe title large, white with a shadow, and positioned specifically */
+#titleBanner h1 {
+  font-family: 'Verdana';
+  color: white;
+  font-size: 500%;
+  padding: 0;
+  margin: 0 0 2vw 2vw;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 300%;
+}
+
+#titleBanner h1.tp {
+  font-size: 300%
+}
+
+#titleBanner h1.black {
+  color:#000000;
+}
+
+
+#recipeColumns {
+  padding: 4vh;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6vh;
+  background-color: #6D5D46;
+}
+
+#recipeColumns div#ingredients {
+  flex-basis: 40%;
+}
+#recipeColumns div#equipment {
+  flex-basis: 40%;
+}
+#recipeColumns div#directions {
+  flex-basis: 40%;
+}
+/*hide the columns at first*/
+#recipeColumns #ingredients ul,
+#recipeColumns #equipment ul,
+#recipeColumns #directions ol { 
+  display:none
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol
+{
+  display: block;
+}
+
+
+#recipeColumns ul,
+ol {
+  padding-left: 1.1em;
+}
+
+ul,
+ol {
+  display: block;
+}
+
+#recipeColumns h4 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 3;
+  font-family: 'Roboto', ;
+}
+
+.tiramisu.jpg {
+  width: 60vh;
+  height: 50vh;
+  align: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px 10px 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#footer,
+#footer a {
+  text-align: right;
+  font-size: 10px;
+}
+
+@media screen and (orientation: portrait) {
+  #recipeColumns {
+    padding: 1vh 2vh 2vh 2vh;
+    display: block;
+  }
+  #recipeColumns div {
+    position: relative;
+    margin: 2.5vh 0 5vh 0;
+    fontsize: 50%;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 575px) {
+  #titleBanner {
+    height: 98vh;
+ 
+  }
+  #titleBanner h1 {
+    font-size: 40px%;
+    position: absolute;
+    margin: 0 0 3vh 3vh;
+  }
+}

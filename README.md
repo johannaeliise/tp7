@@ -1,2 +1,2 @@
-# tp7
-For Tiny Project #7
+# tp6
+For Tiny Project #6
